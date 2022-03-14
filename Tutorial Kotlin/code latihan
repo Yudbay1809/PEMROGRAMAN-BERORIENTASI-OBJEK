@@ -1,0 +1,181 @@
+fun main() {
+println("Hello World")
+}
+println("Hello World")
+println("I am learning Kotlin.")
+println("It is awesome!")
+println(3 + 3)
+
+var name = "Yudha Bayu Prastyo"
+val birthyear = 2002
+
+println(name) // Print the value of name
+println(birthyear) // Print the value of birthyear
+
+val firstName = "Yudha "
+val middlName = "Bayu "
+val lastName = "Prastyo"
+val fullName = firstName + middlName + lastName
+println(fullName)
+
+val x = 12
+val y = 6
+println(x + y) // Print the value of x + y
+println(x - y) // Print the value of x + y
+println(x * y) // Print the value of x + y
+println(x / y) // Print the value of x + y
+
+val myNum = 11 // Int
+val myDoubleNum = 5.991 // Double
+val myLetter = 'A' // Char
+val myBoolean = true // Boolean
+val myText = "Hello" // String
+println(myNum)
+println(myDoubleNum)
+println(myLetter)
+println(myBoolean)
+println(myText)
+
+val b: Int = 5
+val c: Long = b.toLong()
+println(c)
+
+var sum1 = 100 + 50 // 150 (100 + 50)
+var sum2 = sum1 + 250 // 400 (150 + 250)
+var sum3 = sum2 + sum2 // 800 (400 + 400)
+println(sum1)
+println(sum2)
+println(sum3)
+
+var A = 10
+A += 5
+println(A)
+println(A > 3 && x < 10) // returns true because 5 is greater than 3 AND 5 is less than 10
+
+var txt = "Hello World"
+println(txt[0]) // first element/character
+println(txt[2]) // third element/character
+
+var firstname = "Yudha"
+var middlename = "Bayu"
+var lastname = "Prastyo"
+println("My name is $firstname $middlename $lastname")
+
+var fn = "Yudha"
+var ln = "Prastyo"
+println(fn + " Bayu " + ln)
+
+val d = 10
+val f = 9
+println(d > f) // Returns true, because 10 is greater than 9
+println(d == 10); // Returns true, because the value of x is equal to 10
+println(f == 10); // Returns true, because the value of x is equal to 10
+
+val time = 1
+val greeting = if (time < 18) {
+"Good day."
+} else {
+"Good evening."
+}
+println(greeting)
+
+val day = 7
+
+val result = when (day) {
+1 -> "Monday"
+2 -> "Tuesday"
+3 -> "Wednesday"
+4 -> "Thursday"
+5 -> "Friday"
+6 -> "Saturday"
+7 -> "Sunday"
+else -> "Invalid day."
+}
+println(result)
+
+var i = 0
+while (i < 5) {
+println(i)
+i++
+}
+var e = 0
+do {
+println(e)
+e++
+}
+while (e < 5)
+
+var q = 0
+while (q < 10) {
+println(q)
+q++
+if (q == 4) {
+break
+}
+}
+
+var w = 5
+while (w < 10) {
+if (w == 4) {
+w++
+continue
+}
+println(w)
+w++
+}
+
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+println(cars[3])
+// Outputs Volvo
+
+val mobil = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+println(mobil.size)
+// Outputs 4
+
+val mo = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+for (r in mo) {
+println(r)
+}
+
+val mob = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+if ("Subauwu" in mob) {
+println("It exists!")
+} else {
+println("It does not exist.")
+}
+
+val mobi = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+for (t in mobi) {
+println(t)
+}
+
+val nums = arrayOf(1, 5, 10, 15, 20)
+for (y in nums) {
+println(y)
+}
+
+for (nums in 5..15) {
+if (nums == 10) {
+break
+}
+println(nums)
+}
+
+for (num in 13..15) {
+if (num == 10) {
+continue
+}
+println(num)
+}
+
+fun myFunction(fname: String, age: Int) {
+println(fname + " is " + age)
+}
+myFunction("Bayu", 19)
+myFunction("Yudha", 20)
+myFunction("Yudbay", 21)
+
+fun myFunction(u: Int, o: Int) = u + o
+
+var res = myFunction(3, 5)
+println(res)
